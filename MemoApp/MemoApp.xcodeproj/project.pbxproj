@@ -16,6 +16,8 @@
 		F37C58DC2C3589CB000A2AED /* MemoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C58DB2C3589CB000A2AED /* MemoAppUITestsLaunchTests.swift */; };
 		F37C58EA2C358DF3000A2AED /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C58E92C358DF2000A2AED /* Memo.swift */; };
 		F37C58F02C359AE9000A2AED /* MemoListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C58EF2C359AE9000A2AED /* MemoListingView.swift */; };
+		F37C58F22C35A0FE000A2AED /* MemoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C58F12C35A0FE000A2AED /* MemoDetailView.swift */; };
+		F37C58F52C35A496000A2AED /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C58F42C35A496000A2AED /* Date+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		F37C58DB2C3589CB000A2AED /* MemoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F37C58E92C358DF2000A2AED /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		F37C58EF2C359AE9000A2AED /* MemoListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListingView.swift; sourceTree = "<group>"; };
+		F37C58F12C35A0FE000A2AED /* MemoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailView.swift; sourceTree = "<group>"; };
+		F37C58F42C35A496000A2AED /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				F37C58BE2C3589CA000A2AED /* MemoAppApp.swift */,
+				F37C58F32C35A475000A2AED /* Extensions */,
 				F37C58ED2C359AC8000A2AED /* View */,
 				F37C58EC2C359AB5000A2AED /* Models */,
 				F37C58C22C3589CB000A2AED /* Assets.xcassets */,
@@ -153,8 +158,17 @@
 			children = (
 				F37C58C02C3589CA000A2AED /* ContentView.swift */,
 				F37C58EF2C359AE9000A2AED /* MemoListingView.swift */,
+				F37C58F12C35A0FE000A2AED /* MemoDetailView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F37C58F32C35A475000A2AED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F37C58F42C35A496000A2AED /* Date+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +304,8 @@
 				F37C58EA2C358DF3000A2AED /* Memo.swift in Sources */,
 				F37C58F02C359AE9000A2AED /* MemoListingView.swift in Sources */,
 				F37C58C12C3589CA000A2AED /* ContentView.swift in Sources */,
+				F37C58F52C35A496000A2AED /* Date+.swift in Sources */,
+				F37C58F22C35A0FE000A2AED /* MemoDetailView.swift in Sources */,
 				F37C58BF2C3589CA000A2AED /* MemoAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
