@@ -8,5 +8,7 @@ struct Memo: Identifiable {
 }
 
 extension Memo {
-    
+    public func getTitle() -> String {
+        return self.title
+    }
 }
