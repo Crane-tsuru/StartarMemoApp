@@ -18,6 +18,7 @@
 		F37C58F02C359AE9000A2AED /* MemoListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C58EF2C359AE9000A2AED /* MemoListingView.swift */; };
 		F37C58F22C35A0FE000A2AED /* MemoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C58F12C35A0FE000A2AED /* MemoDetailView.swift */; };
 		F37C58F52C35A496000A2AED /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C58F42C35A496000A2AED /* Date+.swift */; };
+		F37C58F72C3628B0000A2AED /* TextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C58F62C3628B0000A2AED /* TextEditorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		F37C58EF2C359AE9000A2AED /* MemoListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListingView.swift; sourceTree = "<group>"; };
 		F37C58F12C35A0FE000A2AED /* MemoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailView.swift; sourceTree = "<group>"; };
 		F37C58F42C35A496000A2AED /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		F37C58F62C3628B0000A2AED /* TextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 				F37C58C02C3589CA000A2AED /* ContentView.swift */,
 				F37C58EF2C359AE9000A2AED /* MemoListingView.swift */,
 				F37C58F12C35A0FE000A2AED /* MemoDetailView.swift */,
+				F37C58F62C3628B0000A2AED /* TextEditorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				F37C58C12C3589CA000A2AED /* ContentView.swift in Sources */,
 				F37C58F52C35A496000A2AED /* Date+.swift in Sources */,
 				F37C58F22C35A0FE000A2AED /* MemoDetailView.swift in Sources */,
+				F37C58F72C3628B0000A2AED /* TextEditorView.swift in Sources */,
 				F37C58BF2C3589CA000A2AED /* MemoAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
