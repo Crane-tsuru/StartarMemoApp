@@ -12,15 +12,31 @@ struct CreateMemoView: View {
     @State var inputText = ""
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack {
             Spacer()
             TextField("タイトル", text: $title)
                 .frame(width: 300)
                 .textFieldStyle(.roundedBorder)
                 .padding()
-            Text("内容")
+            
+            VStack(alignment: .leading) {
+                Text("内容")
+            }
             TextEditorView(inputText: inputText)
             
+            Button(action: {
+                
+            }, label: {
+                Capsule()
+                    .frame(width: 200, height: 100)
+                    .foregroundColor(.orange)
+                    .overlay(Text("保存")
+                        .foregroundColor(.white)
+                        .font(.title)
+                        )
+            }).padding()
+            
+            Spacer()
         }
     }
 }
