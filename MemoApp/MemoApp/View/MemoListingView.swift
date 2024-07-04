@@ -13,7 +13,9 @@ struct MemoListingView: View {
     var body: some View {
         List {
             ForEach(memoList) { memo in
-                Text(memo.getTitle())
+                NavigationLink(destination: MemoDetailView(memo: memo)) {
+                    Text(memo.getTitle())
+                }
             }
         }
     }
