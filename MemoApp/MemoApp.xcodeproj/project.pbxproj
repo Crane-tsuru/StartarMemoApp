@@ -137,18 +137,10 @@
 			path = MemoAppUITests;
 			sourceTree = "<group>";
 		};
-		F37C58E82C358DE8000A2AED /* Memo */ = {
-			isa = PBXGroup;
-			children = (
-				F37C58E92C358DF2000A2AED /* Memo.swift */,
-			);
-			path = Memo;
-			sourceTree = "<group>";
-		};
 		F37C58EC2C359AB5000A2AED /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F37C58E82C358DE8000A2AED /* Memo */,
+				F37C58E92C358DF2000A2AED /* Memo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
