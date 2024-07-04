@@ -14,7 +14,7 @@ struct MemoDetailView: View {
         NavigationStack {
             List {
                 Text("作成日時: \(memo.getDateForCreateMemo())")
-                NavigationLink(destination: TextEditorView(inputText: memo.getDescription())) {
+                NavigationLink(destination: TextEditorView(inputText: memo.getContent())) {
                     Text("内容: \n\(memo.getTitle())")
                 }
             }

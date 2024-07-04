@@ -1,10 +1,17 @@
 import Foundation
+import SwiftData
 
-struct Memo: Identifiable {
+@Model
+class Memo: Identifiable {
     let id = UUID()
     private var title: String
-    private var description: String
+    private var content: String
     private let dateForCreateMemo: Date = Date()
+    
+    init(title: String, content: String) {
+        self.title = title
+        self.content = content
+    }
 }
 
 
@@ -19,7 +26,7 @@ extension Memo {
         return dateString
     }
     
-    public func getDescription() -> String {
-        return self.description
+    public func getContent() -> String {
+        return self.content
     }
 }

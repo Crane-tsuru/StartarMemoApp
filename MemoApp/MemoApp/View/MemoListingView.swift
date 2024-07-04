@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct MemoListingView: View {
-    @State private var memoList: [Memo] = []
+    @Environment(\.modelContext) private var context
+    @Query private var memoList: [Memo]
     
     var body: some View {
         List {

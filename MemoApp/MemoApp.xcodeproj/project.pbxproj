@@ -37,6 +37,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F37C59012C3646A1000A2AED /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F37C58BB2C3589CA000A2AED /* MemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37C58BE2C3589CA000A2AED /* MemoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoAppApp.swift; sourceTree = "<group>"; };
@@ -86,6 +99,7 @@
 				F37C58CE2C3589CB000A2AED /* MemoAppTests */,
 				F37C58D82C3589CB000A2AED /* MemoAppUITests */,
 				F37C58BC2C3589CA000A2AED /* Products */,
+				F37C58FE2C3646A1000A2AED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +177,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		F37C58FE2C3646A1000A2AED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -173,12 +194,15 @@
 				F37C58B72C3589CA000A2AED /* Sources */,
 				F37C58B82C3589CA000A2AED /* Frameworks */,
 				F37C58B92C3589CA000A2AED /* Resources */,
+				F37C59012C3646A1000A2AED /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MemoApp;
+			packageProductDependencies = (
+			);
 			productName = MemoApp;
 			productReference = F37C58BB2C3589CA000A2AED /* MemoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -251,6 +275,8 @@
 				Base,
 			);
 			mainGroup = F37C58B22C3589CA000A2AED;
+			packageReferences = (
+			);
 			productRefGroup = F37C58BC2C3589CA000A2AED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
