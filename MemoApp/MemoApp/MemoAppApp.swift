@@ -12,7 +12,7 @@ import SwiftData
 struct MemoAppApp: App {
     var body: some Scene {
         WindowGroup {
-            MemoListingView()
+            HomeView()
                 .modelContainer(for: Memo.self)
         }
     }

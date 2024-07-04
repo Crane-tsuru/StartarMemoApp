@@ -164,10 +164,10 @@
 		F37C58ED2C359AC8000A2AED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F37C59082C366472000A2AED /* HomeView.swift */,
 				F37C58EF2C359AE9000A2AED /* MemoListingView.swift */,
 				F37C58F12C35A0FE000A2AED /* MemoDetailView.swift */,
 				F37C58F62C3628B0000A2AED /* TextEditorView.swift */,
-				F37C59082C366472000A2AED /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

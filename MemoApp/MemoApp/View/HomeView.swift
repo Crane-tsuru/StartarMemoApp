@@ -6,10 +6,22 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct HomeView: View {
+    @Query private var memoList: [Memo]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            MemoListingView(memoList: memoList)
+        }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button("新規") {
+                    
+                }
+            }
+        }
     }
 }
 

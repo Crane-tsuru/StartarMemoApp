@@ -6,22 +6,24 @@
 //
 
 import SwiftUI
-import SwiftData
 
 struct MemoListingView: View {
-    @Query private var memoList: [Memo]
+    var memoList: [Memo]
     
     var body: some View {
         List {
-            ForEach(memoList) { memo in
-                NavigationLink(destination: MemoDetailView(memo: memo)) {
-                    Text(memo.getTitle())
+            ScrollView {
+                ForEach(memoList) { memo in
+                    NavigationLink(destination: MemoDetailView(memo: memo)) {
+                        Text(memo.getTitle())
+                    }
                 }
+
             }
         }
     }
 }
 
 #Preview {
-    MemoListingView()
+    MemoListingView(memoList: [])
 }
