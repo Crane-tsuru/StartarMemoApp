@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MemoDetailView: View {
-    private let memo: Memo
+    let memo: Memo
     
     var body: some View {
         NavigationStack {

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F37C58BF2C3589CA000A2AED /* MemoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C58BE2C3589CA000A2AED /* MemoAppApp.swift */; };
-		F37C58C12C3589CA000A2AED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C58C02C3589CA000A2AED /* ContentView.swift */; };
 		F37C58C32C3589CB000A2AED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37C58C22C3589CB000A2AED /* Assets.xcassets */; };
 		F37C58C62C3589CB000A2AED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37C58C52C3589CB000A2AED /* Preview Assets.xcassets */; };
 		F37C58D02C3589CB000A2AED /* MemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C58CF2C3589CB000A2AED /* MemoAppTests.swift */; };
@@ -41,7 +40,6 @@
 /* Begin PBXFileReference section */
 		F37C58BB2C3589CA000A2AED /* MemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37C58BE2C3589CA000A2AED /* MemoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoAppApp.swift; sourceTree = "<group>"; };
-		F37C58C02C3589CA000A2AED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F37C58C22C3589CB000A2AED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F37C58C52C3589CB000A2AED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F37C58CB2C3589CB000A2AED /* MemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,7 +156,6 @@
 		F37C58ED2C359AC8000A2AED /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F37C58C02C3589CA000A2AED /* ContentView.swift */,
 				F37C58EF2C359AE9000A2AED /* MemoListingView.swift */,
 				F37C58F12C35A0FE000A2AED /* MemoDetailView.swift */,
 				F37C58F62C3628B0000A2AED /* TextEditorView.swift */,
@@ -306,7 +303,6 @@
 			files = (
 				F37C58EA2C358DF3000A2AED /* Memo.swift in Sources */,
 				F37C58F02C359AE9000A2AED /* MemoListingView.swift in Sources */,
-				F37C58C12C3589CA000A2AED /* ContentView.swift in Sources */,
 				F37C58F52C35A496000A2AED /* Date+.swift in Sources */,
 				F37C58F22C35A0FE000A2AED /* MemoDetailView.swift in Sources */,
 				F37C58F72C3628B0000A2AED /* TextEditorView.swift in Sources */,
