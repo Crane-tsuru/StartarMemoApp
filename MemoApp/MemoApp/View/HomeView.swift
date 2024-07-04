@@ -12,15 +12,13 @@ struct HomeView: View {
     @Query private var memoList: [Memo]
     
     var body: some View {
-        VStack {
+        NavigationStack {
             MemoListingView(memoList: memoList)
-        }
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                Button("新規") {
-                    
+                .toolbar {
+                    Button("新規") {
+                        
+                    }
                 }
-            }
         }
     }
 }
