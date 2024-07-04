@@ -9,6 +9,7 @@ import SwiftUI
 import SwiftData
 
 struct HomeView: View {
+    @Environment(\.modelContext) private var context
     @Query private var memoList: [Memo]
     
     @State var writeMemo = false
@@ -24,6 +25,15 @@ struct HomeView: View {
         }.sheet(isPresented: $writeMemo) {
             CreateMemoView()
         }
+    }
+    
+    
+    public func add(memo: Memo) {
+        context.insert(memo)
+    }
+    
+    public func delete(memo: Memo) {
+        
     }
 }
 
