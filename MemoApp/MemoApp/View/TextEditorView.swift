@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct TextEditorView: View {
+    @State var inputText: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            TextEditor(text: $inputText)
+                .frame(width: 300, height: 400)
+        }
     }
 }
 
 #Preview {
-    TextEditorView()
+    TextEditorView(inputText: "text")
 }
