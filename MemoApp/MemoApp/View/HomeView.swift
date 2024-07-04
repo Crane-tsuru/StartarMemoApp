@@ -28,12 +28,12 @@ struct HomeView: View {
     }
     
     
-    public func add(memo: Memo) {
+    public func saveMemo(memo: Memo) {
         context.insert(memo)
     }
     
-    public func delete(memo: Memo) {
-        
+    public func deleteMemo(memo: Memo) {
+        context.delete(memo)
     }
 }
 
