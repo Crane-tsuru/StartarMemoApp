@@ -18,6 +18,7 @@
 		F37C58F22C35A0FE000A2AED /* MemoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C58F12C35A0FE000A2AED /* MemoDetailView.swift */; };
 		F37C58F52C35A496000A2AED /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C58F42C35A496000A2AED /* Date+.swift */; };
 		F37C58F72C3628B0000A2AED /* TextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C58F62C3628B0000A2AED /* TextEditorView.swift */; };
+		F37C59092C366472000A2AED /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C59082C366472000A2AED /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		F37C58F12C35A0FE000A2AED /* MemoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailView.swift; sourceTree = "<group>"; };
 		F37C58F42C35A496000A2AED /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		F37C58F62C3628B0000A2AED /* TextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorView.swift; sourceTree = "<group>"; };
+		F37C59082C366472000A2AED /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				F37C58EF2C359AE9000A2AED /* MemoListingView.swift */,
 				F37C58F12C35A0FE000A2AED /* MemoDetailView.swift */,
 				F37C58F62C3628B0000A2AED /* TextEditorView.swift */,
+				F37C59082C366472000A2AED /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F37C58EA2C358DF3000A2AED /* Memo.swift in Sources */,
+				F37C59092C366472000A2AED /* HomeView.swift in Sources */,
 				F37C58F02C359AE9000A2AED /* MemoListingView.swift in Sources */,
 				F37C58F52C35A496000A2AED /* Date+.swift in Sources */,
 				F37C58F22C35A0FE000A2AED /* MemoDetailView.swift in Sources */,
