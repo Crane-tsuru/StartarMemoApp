@@ -17,4 +17,8 @@ extension Memo {
         let dateString = dateForCreateMemo.getDateString()
         return dateString
     }
+    
+    public func getDescription() -> String {
+        return self.description
+    }
 }
