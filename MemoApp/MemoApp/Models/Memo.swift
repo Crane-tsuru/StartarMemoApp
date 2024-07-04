@@ -7,6 +7,7 @@ struct Memo: Identifiable {
     private let dateForCreateMemo: Date = Date()
 }
 
+
 extension Memo {
     public func getTitle() -> String {
         return self.title
