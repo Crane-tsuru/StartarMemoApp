@@ -50,7 +50,10 @@ struct CreateMemoView: View {
             Spacer()
         }
         .alert(isPresented: $isShowAlert) {
-            Alert(title: Text("追加しました"), dismissButton: .default(Text("戻る")))
+            Alert(title: Text("追加しました"), dismissButton: .default(Text("戻る"), action: { goToHomeView = true }))
+        }
+        .fullScreenCover(isPresented: $goToHomeView) {
+            HomeView()
         }
     }
 }
