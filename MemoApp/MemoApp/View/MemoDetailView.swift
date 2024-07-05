@@ -14,7 +14,7 @@ struct MemoDetailView: View {
         NavigationStack {
             List {
                 Text("作成日時: \(memo.getDateForCreateMemo())")
-                NavigationLink(destination: TextEditor(text: .constant("れい"))) {
+                NavigationLink(destination: CreateMemoView(title: memo.getTitle(), inputText: memo.getContent())) {
                     HStack {
                         Text("内容: \n\(memo.getContent())")
                     }
@@ -26,6 +26,7 @@ struct MemoDetailView: View {
             Button("削除") {
                 
             }
+            Spacer()
         }
     }
 }
