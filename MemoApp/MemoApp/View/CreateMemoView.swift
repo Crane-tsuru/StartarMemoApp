@@ -11,6 +11,9 @@ import SwiftData
 struct CreateMemoView: View {
     @Environment(\.modelContext) private var context
     
+    @State var isShowAlert = false
+    @State var goToHomeView = false
+    
     @State var title = ""
     @State var inputText = ""
     
@@ -33,6 +36,7 @@ struct CreateMemoView: View {
             
             Button(action: {
                 context.insert(Memo(title: title, content: inputText))
+                isShowAlert = true
             }, label: {
                 Capsule()
                     .frame(width: 200, height: 100)
@@ -44,6 +48,9 @@ struct CreateMemoView: View {
             }).padding()
             
             Spacer()
+        }
+        .alert(isPresented: $isShowAlert) {
+            Alert(title: Text("追加しました"), dismissButton: .default(Text("戻る")))
         }
     }
 }
