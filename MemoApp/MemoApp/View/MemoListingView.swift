@@ -11,16 +11,15 @@ struct MemoListingView: View {
     var memoList: [Memo]
     
     var body: some View {
-        List {
-            ScrollView {
+        NavigationStack {
+            List {
                 ForEach(memoList) { memo in
                     NavigationLink(destination: MemoDetailView(memo: memo)) {
                         
                         Text(memo.getTitle())
-                        
+                            
                     }
                 }
-
             }
         }
     }
