@@ -10,6 +10,9 @@ import SwiftUI
 struct MemoDetailView: View {
     let memo: Memo
     
+    @State var isShowAlert = false
+    @State var goToHomeView = false
+    
     @Environment(\.modelContext) private var context
     
     var body: some View {
@@ -29,6 +32,12 @@ struct MemoDetailView: View {
                 context.delete(memo)
             }
             Spacer()
+        }
+        .alert(isPresented: $isShowAlert) {
+            Alert(title: <#T##Text#>, message: <#T##Text?#>, primaryButton: <#T##Alert.Button#>, secondaryButton: <#T##Alert.Button#>)
+        }
+        .fullScreenCover(isPresented: $goToHomeView) {
+            HomeView()
         }
     }
 }
