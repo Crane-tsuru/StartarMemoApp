@@ -14,15 +14,18 @@ struct MemoDetailView: View {
         NavigationStack {
             List {
                 Text("作成日時: \(memo.getDateForCreateMemo())")
-                NavigationLink(destination: TextEditorView(inputText: memo.getContent())) {
+                NavigationLink(destination: TextEditor(text: .constant("れい"))) {
                     HStack {
-                        Text("内容: \n\(memo.getTitle())")
+                        Text("内容: \n\(memo.getContent())")
                     }
                 }
-//                Text(memo.getContent())
 
             }
             .navigationTitle(memo.getTitle())
+            
+            Button("削除") {
+                
+            }
         }
     }
 }
