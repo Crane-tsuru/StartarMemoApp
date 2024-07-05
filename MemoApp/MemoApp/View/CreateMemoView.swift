@@ -11,8 +11,6 @@ import SwiftData
 struct CreateMemoView: View {
     @Environment(\.modelContext) private var context
     
-    let memoCreater = MemoCreater()
-    
     @State var title = ""
     @State var inputText = ""
     
