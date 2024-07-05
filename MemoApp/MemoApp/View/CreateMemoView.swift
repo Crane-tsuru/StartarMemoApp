@@ -43,8 +43,6 @@ struct CreateMemoView: View {
                         )
             }).padding()
             
-            Text(inputText)
-            
             Spacer()
         }
     }

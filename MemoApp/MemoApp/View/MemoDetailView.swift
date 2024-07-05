@@ -22,6 +22,10 @@ struct MemoDetailView: View {
 
             }
             .navigationTitle(memo.getTitle())
+            
+            Button("削除") {
+                
+            }
         }
     }
 }
