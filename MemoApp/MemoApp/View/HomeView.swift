@@ -9,7 +9,6 @@ import SwiftUI
 import SwiftData
 
 struct HomeView: View {
-    @Environment(\.modelContext) private var context
     @Query private var memoList: [Memo]
     
     @State var writeMemo = false

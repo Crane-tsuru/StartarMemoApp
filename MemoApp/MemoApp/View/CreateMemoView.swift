@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct CreateMemoView: View {
+    @Environment(\.modelContext) private var context
+    
     @State var title = ""
     @State var inputText = ""
     
@@ -25,7 +28,7 @@ struct CreateMemoView: View {
             TextEditorView(inputText: inputText)
             
             Button(action: {
-                
+//                context.insert(
             }, label: {
                 Capsule()
                     .frame(width: 200, height: 100)
