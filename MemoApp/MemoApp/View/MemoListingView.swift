@@ -15,7 +15,9 @@ struct MemoListingView: View {
             ScrollView {
                 ForEach(memoList) { memo in
                     NavigationLink(destination: MemoDetailView(memo: memo)) {
+                        
                         Text(memo.getTitle())
+                        
                     }
                 }
 

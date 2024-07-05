@@ -23,6 +23,6 @@ struct MemoDetailView: View {
     }
 }
 
-//#Preview {
-//    MemoDetailView()
-//}
+#Preview {
+    MemoDetailView(memo: Memo(title: "れい", content: "あいうえお"))
+}

@@ -11,6 +11,8 @@ import SwiftData
 struct CreateMemoView: View {
     @Environment(\.modelContext) private var context
     
+    let memoCreater = MemoCreater()
+    
     @State var title = ""
     @State var inputText = ""
     
@@ -28,7 +30,7 @@ struct CreateMemoView: View {
             TextEditorView(inputText: inputText)
             
             Button(action: {
-//                context.insert(
+                context.insert(Memo(title: title, content: inputText))
             }, label: {
                 Capsule()
                     .frame(width: 200, height: 100)
