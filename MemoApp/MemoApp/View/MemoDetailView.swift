@@ -10,6 +10,8 @@ import SwiftUI
 struct MemoDetailView: View {
     let memo: Memo
     
+    @Environment(\.modelContext) private var context
+    
     var body: some View {
         NavigationStack {
             List {
@@ -24,7 +26,7 @@ struct MemoDetailView: View {
             .navigationTitle(memo.getTitle())
             
             Button("削除") {
-                
+                context.delete(memo)
             }
             Spacer()
         }
