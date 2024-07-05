@@ -10,11 +10,13 @@ import SwiftUI
 struct MemoDetailView: View {
     let memo: Memo
     
+    @Environment(\.modelContext) private var context
+    
     var body: some View {
         NavigationStack {
             List {
                 Text("作成日時: \(memo.getDateForCreateMemo())")
-                NavigationLink(destination: TextEditor(text: .constant("れい"))) {
+                NavigationLink(destination: CreateMemoView(title: memo.getTitle(), inputText: memo.getContent())) {
                     HStack {
                         Text("内容: \n\(memo.getContent())")
                     }
@@ -24,8 +26,9 @@ struct MemoDetailView: View {
             .navigationTitle(memo.getTitle())
             
             Button("削除") {
-                
+                context.delete(memo)
             }
+            Spacer()
         }
     }
 }
