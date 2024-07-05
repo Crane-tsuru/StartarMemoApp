@@ -26,17 +26,9 @@ struct HomeView: View {
             CreateMemoView()
         }
     }
-    
-    
-    public func saveMemo(memo: Memo) {
-        context.insert(memo)
-    }
-    
-    public func deleteMemo(memo: Memo) {
-        context.delete(memo)
-    }
 }
 
 #Preview {
     HomeView()
+        .modelContainer(for: Memo.self)
 }

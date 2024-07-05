@@ -20,6 +20,7 @@
 		F37C58F72C3628B0000A2AED /* TextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C58F62C3628B0000A2AED /* TextEditorView.swift */; };
 		F37C59092C366472000A2AED /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C59082C366472000A2AED /* HomeView.swift */; };
 		F38C23DC2C3670D200CC75D9 /* CreateMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38C23DB2C3670D200CC75D9 /* CreateMemoView.swift */; };
+		F38C23DE2C37D46C00CC75D9 /* ModelContext+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38C23DD2C37D46C00CC75D9 /* ModelContext+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		F37C58F62C3628B0000A2AED /* TextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorView.swift; sourceTree = "<group>"; };
 		F37C59082C366472000A2AED /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F38C23DB2C3670D200CC75D9 /* CreateMemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMemoView.swift; sourceTree = "<group>"; };
+		F38C23DD2C37D46C00CC75D9 /* ModelContext+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelContext+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				F37C58F42C35A496000A2AED /* Date+.swift */,
+				F38C23DD2C37D46C00CC75D9 /* ModelContext+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F37C58EA2C358DF3000A2AED /* Memo.swift in Sources */,
+				F38C23DE2C37D46C00CC75D9 /* ModelContext+.swift in Sources */,
 				F37C59092C366472000A2AED /* HomeView.swift in Sources */,
 				F37C58F02C359AE9000A2AED /* MemoListingView.swift in Sources */,
 				F37C58F52C35A496000A2AED /* Date+.swift in Sources */,
