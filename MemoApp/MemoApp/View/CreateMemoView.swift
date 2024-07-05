@@ -25,7 +25,11 @@ struct CreateMemoView: View {
             VStack(alignment: .leading) {
                 Text("内容")
             }
-            TextEditorView(inputText: inputText)
+            
+            TextEditor(text: $inputText)
+                .frame(width: 300, height: 400)
+                .border(.gray)
+
             
             Button(action: {
                 context.insert(Memo(title: title, content: inputText))
@@ -38,6 +42,8 @@ struct CreateMemoView: View {
                         .font(.title)
                         )
             }).padding()
+            
+            Text(inputText)
             
             Spacer()
         }
