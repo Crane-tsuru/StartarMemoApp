@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct MemoListingView: View {
-    @State private var memoList: [Memo] = []
+    var memoList: [Memo]
     
     var body: some View {
         List {
             ForEach(memoList) { memo in
                 NavigationLink(destination: MemoDetailView(memo: memo)) {
+                    
                     Text(memo.getTitle())
+                            
                 }
             }
         }
@@ -22,5 +24,5 @@ struct MemoListingView: View {
 }
 
 #Preview {
-    MemoListingView()
+    MemoListingView(memoList: [])
 }

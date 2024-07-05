@@ -14,9 +14,13 @@ struct MemoDetailView: View {
         NavigationStack {
             List {
                 Text("作成日時: \(memo.getDateForCreateMemo())")
-                NavigationLink(destination: TextEditorView(inputText: memo.getDescription())) {
-                    Text("内容: \n\(memo.getTitle())")
+                NavigationLink(destination: TextEditorView(inputText: memo.getContent())) {
+                    HStack {
+                        Text("内容: \n\(memo.getTitle())")
+                    }
                 }
+//                Text(memo.getContent())
+
             }
             .navigationTitle(memo.getTitle())
         }
@@ -24,5 +28,6 @@ struct MemoDetailView: View {
 }
 
 //#Preview {
-//    MemoDetailView()
+//    MemoDetailView(memo: Memo(title: "れい", content: "あいうえお"))
+////    MemoDetailView()
 //}

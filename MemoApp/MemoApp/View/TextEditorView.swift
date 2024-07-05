@@ -14,6 +14,7 @@ struct TextEditorView: View {
         ScrollView {
             TextEditor(text: $inputText)
                 .frame(width: 300, height: 400)
+                .border(.gray)
         }
     }
 }

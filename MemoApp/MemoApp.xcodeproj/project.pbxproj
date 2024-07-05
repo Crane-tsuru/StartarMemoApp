@@ -18,6 +18,9 @@
 		F37C58F22C35A0FE000A2AED /* MemoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C58F12C35A0FE000A2AED /* MemoDetailView.swift */; };
 		F37C58F52C35A496000A2AED /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C58F42C35A496000A2AED /* Date+.swift */; };
 		F37C58F72C3628B0000A2AED /* TextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C58F62C3628B0000A2AED /* TextEditorView.swift */; };
+		F37C59092C366472000A2AED /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37C59082C366472000A2AED /* HomeView.swift */; };
+		F38C23DC2C3670D200CC75D9 /* CreateMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38C23DB2C3670D200CC75D9 /* CreateMemoView.swift */; };
+		F38C23DE2C37D46C00CC75D9 /* ModelContext+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38C23DD2C37D46C00CC75D9 /* ModelContext+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F37C59012C3646A1000A2AED /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F37C58BB2C3589CA000A2AED /* MemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37C58BE2C3589CA000A2AED /* MemoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoAppApp.swift; sourceTree = "<group>"; };
@@ -52,6 +68,9 @@
 		F37C58F12C35A0FE000A2AED /* MemoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailView.swift; sourceTree = "<group>"; };
 		F37C58F42C35A496000A2AED /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		F37C58F62C3628B0000A2AED /* TextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorView.swift; sourceTree = "<group>"; };
+		F37C59082C366472000A2AED /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F38C23DB2C3670D200CC75D9 /* CreateMemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMemoView.swift; sourceTree = "<group>"; };
+		F38C23DD2C37D46C00CC75D9 /* ModelContext+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelContext+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +105,7 @@
 				F37C58CE2C3589CB000A2AED /* MemoAppTests */,
 				F37C58D82C3589CB000A2AED /* MemoAppUITests */,
 				F37C58BC2C3589CA000A2AED /* Products */,
+				F37C58FE2C3646A1000A2AED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,8 +168,10 @@
 		F37C58ED2C359AC8000A2AED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F37C59082C366472000A2AED /* HomeView.swift */,
 				F37C58EF2C359AE9000A2AED /* MemoListingView.swift */,
 				F37C58F12C35A0FE000A2AED /* MemoDetailView.swift */,
+				F38C23DB2C3670D200CC75D9 /* CreateMemoView.swift */,
 				F37C58F62C3628B0000A2AED /* TextEditorView.swift */,
 			);
 			path = View;
@@ -159,8 +181,16 @@
 			isa = PBXGroup;
 			children = (
 				F37C58F42C35A496000A2AED /* Date+.swift */,
+				F38C23DD2C37D46C00CC75D9 /* ModelContext+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F37C58FE2C3646A1000A2AED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,12 +203,15 @@
 				F37C58B72C3589CA000A2AED /* Sources */,
 				F37C58B82C3589CA000A2AED /* Frameworks */,
 				F37C58B92C3589CA000A2AED /* Resources */,
+				F37C59012C3646A1000A2AED /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MemoApp;
+			packageProductDependencies = (
+			);
 			productName = MemoApp;
 			productReference = F37C58BB2C3589CA000A2AED /* MemoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -251,6 +284,8 @@
 				Base,
 			);
 			mainGroup = F37C58B22C3589CA000A2AED;
+			packageReferences = (
+			);
 			productRefGroup = F37C58BC2C3589CA000A2AED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -294,8 +329,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F37C58EA2C358DF3000A2AED /* Memo.swift in Sources */,
+				F38C23DE2C37D46C00CC75D9 /* ModelContext+.swift in Sources */,
+				F37C59092C366472000A2AED /* HomeView.swift in Sources */,
 				F37C58F02C359AE9000A2AED /* MemoListingView.swift in Sources */,
 				F37C58F52C35A496000A2AED /* Date+.swift in Sources */,
+				F38C23DC2C3670D200CC75D9 /* CreateMemoView.swift in Sources */,
 				F37C58F22C35A0FE000A2AED /* MemoDetailView.swift in Sources */,
 				F37C58F72C3628B0000A2AED /* TextEditorView.swift in Sources */,
 				F37C58BF2C3589CA000A2AED /* MemoAppApp.swift in Sources */,

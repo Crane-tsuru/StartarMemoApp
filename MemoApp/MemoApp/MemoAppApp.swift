@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct MemoAppApp: App {
     var body: some Scene {
         WindowGroup {
-            MemoListingView()
+            HomeView()
+                .modelContainer(for: Memo.self)
         }
     }
 }
