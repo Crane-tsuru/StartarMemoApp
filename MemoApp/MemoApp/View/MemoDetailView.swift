@@ -30,11 +30,12 @@ struct MemoDetailView: View {
             
             Button("削除") {
                 context.delete(memo)
+                isShowAlert = true
             }
             Spacer()
         }
         .alert(isPresented: $isShowAlert) {
-            Alert(title: <#T##Text#>, message: <#T##Text?#>, primaryButton: <#T##Alert.Button#>, secondaryButton: <#T##Alert.Button#>)
+            Alert(title: Text("削除しました"), dismissButton: .default(Text("戻る"), action: { goToHomeView = true }))
         }
         .fullScreenCover(isPresented: $goToHomeView) {
             HomeView()
