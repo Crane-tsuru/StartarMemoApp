@@ -14,14 +14,17 @@ struct HomeView: View {
     @State var writeMemo = false
     
     var body: some View {
-        MemoListingView(memoList: memoList)
-            .toolbar {
-                Button("新規") {
-                    writeMemo = true
-                }
-            }.sheet(isPresented: $writeMemo) {
-                CreateMemoView()
+        NavigationStack {
+            MemoListingView(memoList: memoList)
+                .toolbar {
+                    Button("新規") {
+                        writeMemo = true
+                    }
+                    
+                }.sheet(isPresented: $writeMemo) {
+                    CreateMemoView()
             }
+        }
     }
 }
 
