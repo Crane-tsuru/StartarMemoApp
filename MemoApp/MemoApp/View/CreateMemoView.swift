@@ -17,11 +17,14 @@ struct CreateMemoView: View {
     @State var title = ""
     @State var inputText = ""
     
+    @FocusState var showKeyboard: Bool
+    
     var body: some View {
         VStack {
             Spacer()
             TextField("タイトル", text: $title)
                 .frame(width: 300)
+                .focused($showKeyboard)
                 .textFieldStyle(.roundedBorder)
                 .padding()
             
@@ -32,6 +35,18 @@ struct CreateMemoView: View {
             TextEditor(text: $inputText)
                 .frame(width: 300, height: 400)
                 .border(.gray)
+                .focused($showKeyboard)
+                .toolbar {
+                    ToolbarItem(placement: .keyboard) {
+                        HStack {
+                            Spacer()
+                            
+                            Button("Done") {
+                                showKeyboard = false
+                            }
+                        }
+                    }
+                }
 
             
             Button(action: {
